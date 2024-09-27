@@ -1,0 +1,51 @@
+.games-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px; /* Spacing between boxes */
+  padding: 20px;
+  background-color: #f0f0f0; /* Light background */
+}
+
+.game-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer; /* Pointer on hover */
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-thumbnail {
+  width: 100%;
+  height: 100px; /* Fixed height for uniformity */
+  object-fit: cover; /* Cover to fill the box */
+}
+
+.game-title {
+  font-size: 0.9em; /* Smaller font size */
+  margin: 8px;
+  text-align: center; /* Center title */
+  color: #333; /* Darker text */
+  font-weight: normal; /* Normal weight */
+}
+
+.play-button {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 10px;
+  background-color: #007bff; /* Button color */
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.play-button:hover {
+  background-color: #0056b3; /* Darker button on hover */
+}
